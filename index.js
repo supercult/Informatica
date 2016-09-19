@@ -5,6 +5,6 @@ var app = Express();
 
 app.use(Express.static('public'));
 
-app.listen(1337, function () {
+app.listen(80, function () {
   console.log('App is running on port 80');
 });
