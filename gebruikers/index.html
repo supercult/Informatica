@@ -10,7 +10,9 @@
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.red-blue.min.css" />
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../images/favicon.ico">
 </head>
 <body>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -41,9 +43,19 @@
     </div>
     <main class="mdl-layout__content">
       <div class="page-content">
-        
-
-        
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col"></div>
+          <div class="mdl-cell mdl-cell--8-col">
+            <form>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="zoekbox" autocomplete="off">
+                <label class="mdl-textfield__label" for="zoekbox">Zoeken...</label>
+                <span class="mdl-textfield__error">Gebruik aub alleen kleine letters en cijfers</span>
+              </div>
+            </form>
+            <ul class="folder-list mdl-list"></ul>
+          </div>
+        </div>
       </div>
     </main>
   </div>
@@ -52,5 +64,6 @@
   
   <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
   <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <script src="../js/getdirs.js"></script>
 </body>
 </html>
