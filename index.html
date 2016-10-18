@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Cals Informatica | Home</title>
+  <title>Cals Informatica | Gebruikers</title>
   <meta charset="UTF-8">
   <meta name="description" content="Material Design Cals Informatica Website">
   <meta name="keywords" content="CSS, HTML, Java, Pascal, PHP, VB.NET">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.red-blue.min.css" />
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/rootstyle.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
@@ -30,47 +30,27 @@
 -->
       </div>
     </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Cals Informatica</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="/">Home</a>
-        <a class="mdl-navigation__link" href="/gebruikers">Gebruikers</a>
-        <a class="mdl-navigation__link" href="/programmeren">Programmeren</a>
-        <a class="mdl-navigation__link" href="/theorie">Theorie</a>
-        <a class="mdl-navigation__link" href="/contact">Contact</a>
-        <a class="mdl-navigation__link" href="/over">Over</a>
-      </nav>
-    </div>
     <main class="mdl-layout__content">
       <div class="page-content">
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--2-col"></div>
-          
           <div class="mdl-cell mdl-cell--8-col">
-           <div class="demo-card-wide mdl-card mdl-shadow--4dp">
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">Welkom</h2>
-            </div>
-            <div class="mdl-card__supporting-text">Heb jij ook altijd een dikke html pagina willen maken?</div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" href="/programmeren/">Start Hier</a>
-            </div>
-            <div class="mdl-card__menu">
-              <a href="gebruikers/" id="gebruikers">
-                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                  <i class="material-icons">folder_shared</i>
-                </button>
-              </a>
-              <div class="mdl-tooltip" data-mdl-for="gebruikers">Bekijk alle folders</div>
-            </div>
-            </div>
+            <form>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="zoekbox" autocomplete="off">
+                <label class="mdl-textfield__label" for="zoekbox">Zoeken...</label>
+                <span class="mdl-textfield__error">Gebruik aub alleen kleine letters en cijfers</span>
+              </div>
+            </form>
+            <ul class="folder-list mdl-list"></ul>
           </div>
-        </div>                           
+        </div>
       </div>
     </main>
   </div>
   
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <script src="//code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script defer src="//code.getmdl.io/1.2.1/material.min.js"></script>
+  <script src="js/getdirs.js"></script>
 </body>
 </html>
